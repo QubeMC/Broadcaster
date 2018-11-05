@@ -1,0 +1,31 @@
+name: Broadcaster
+main: Broadcaster.Broadcaster
+version: "0.0.3"
+api: ["1.0.0"]
+author: Pub4Game
+website: https://github.com/NukkitRU/Broadcaster
+load: STARTUP
+
+permissions:
+ broadcaster:
+  default: op
+  description: Broadcaster commands permissions.
+  children:
+   broadcaster.on:
+    default: op
+    description: Allows player to turn on Broadcaster.
+   broadcaster.off:
+    default: op
+    description: Allows player to turn off Broadcaster.
+   broadcaster.reload:
+    default: op
+    description: Allows player to reload Broadcaster.
+   broadcaster.info:
+    default: true
+    description: Allows player to to view information about Broadcaster.
+   broadcaster.sendmessage:
+    default: op
+    description: Allows sending messages to players with /sendmessage command.
+   broadcaster.sendpopup:
+    default: op
+    description: Allows sending popups to players with /sendpopup command.
